@@ -1,0 +1,814 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000000;
+  max-width: 100%;
+}
+nav {
+  position: relative;
+}
+nav img {
+  position: absolute;
+  top: 13px;
+  margin-left: 5%;
+  width: 15%;
+}
+nav ul {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1.6rem;
+  color: whitesmoke;
+  position: absolute;
+  justify-content: center;
+  left: 28%;
+  margin-top: 3%;
+}
+li {
+  cursor: pointer;
+}
+li a {
+  color: whitesmoke;
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+li a:hover {
+  color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+}
+li a:active {
+  color: orange;
+}
+nav button {
+  padding: 10px 20px;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 20px;
+  position: relative;
+  left: 78%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+nav button a {
+  color: #000000;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+header h1 {
+  margin-left: 5%;
+  margin-top: 7%;
+  font-size: 3.3rem;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header span {
+  color: orange;
+  font-weight: 200;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header p {
+  color: whitesmoke;
+  margin-left: 5%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 100;
+  font-family: arial;
+}
+.btn1 {
+  background-color: orange;
+  border: 1px solid orange;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+.btn1 a {
+  color: #000000;
+  font-size: 1rem;
+}
+.headerdiv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+.headerdiv2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.headerdiv2 img {
+  width: 75%;
+}
+.headerdiv3 {
+  margin-top: 15%;
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+.headerdiv3 h2 {
+  font-size: 50px;
+  font-weight: 100;
+}
+.headerdiv3 label {
+  font-size: 15px;
+  font-weight: 100;
+}
+.about {
+  color: whitesmoke;
+  margin-top: 10%;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 200;
+}
+.sec1div1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sec1div1 img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 5%;
+}
+.sec1div1 p {
+  color: whitesmoke;
+  margin-left: 2%;
+  margin-top: 4%;
+  line-height: 26px;
+  font-weight: 500;
+}
+hr {
+  width: 70%;
+  margin-left: 15%;
+}
+.sec2 h1 {
+  color: whitesmoke;
+  margin-top: 7%;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 100;
+}
+.sec2 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
+  gap: 2rem;
+}
+.sec2 img {
+  margin-top: 10%;
+  width: 40%;
+  height: 40vh;
+  object-fit: cover;
+}
+.sec2 span {
+  color: orange;
+}
+.sec2 button {
+  margin-top: 7%;
+  border-radius: 25px;
+  border: 1px solid #333;
+  background-color: #333;
+  padding: 25px 50px;
+  position: relative;
+  left: 20%;
+}
+.sec2 a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.sec2 a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.sec2 button:hover {
+  background-color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sec3div1 {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.sec3div1tab1 h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-left: 15%;
+}
+.sec3div1tab1 h1 span {
+  color: orange;
+}
+.sec3div1tab1 p {
+  color: whitesmoke;
+  font-weight: 100;
+  line-height: 26px;
+  margin-left: 15%;
+  font-size: 1rem;
+}
+.sec3div1tab2 img {
+  width: 330px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.sec3div1tab1 button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  background-color: orange;
+  cursor: pointer;
+  margin-top: 3%;
+  margin-left: 15%;
+}
+.sec3div1tab1 a {
+  color: #000000;
+  font-size: 1rem;
+}
+.sec3div2 {
+  color: whitesmoke;
+  margin-top: 10%;
+  text-align: center;
+}
+.sec3div2 h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+.sec3div2 p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 26px;
+}
+.sec3div3 {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-left: 5%;
+}
+.sec3div3tab1 img {
+  width: 80%;
+}
+.sec3div3tab1 p {
+  color: whitesmoke;
+  line-height: 26px;
+}
+.sec3div4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sec3div4 span {
+  color: whitesmoke;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 50px;
+}
+.sec3div4 img {
+  width: 400px;
+  height: 420px;
+  object-fit: cover;
+  margin-top: 5%;
+}
+.sec3div4 p {
+  color: whitesmoke;
+  margin-left: 2%;
+  margin-top: 5%;
+  line-height: 27px;
+  font-weight: 500;
+}
+.sec3div4 button {
+  padding: 15px 30px;
+  margin-top: 2%;
+  background-color: orange;
+  border: 1px solid orange;
+  cursor: pointer;
+}
+.sec3div4 a {
+  color: #000000;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.sec4 h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 10%;
+  font-weight: 100;
+  font-size: 2.3rem;
+}
+.sec4div1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  margin-top: 5%;
+  margin-left: 7%;
+}
+fieldset {
+  color: whitesmoke;
+  width: 80%;
+  height: 28vh;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+}
+fieldset h2 {
+  text-align: center;
+  margin-top: 3%;
+  font-weight: 100;
+}
+fieldset p {
+  text-align: center;
+  margin-top: 2%;
+  line-height: 20px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.sec4div2 {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: 7%;
+}
+.sec4div2 h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: whitesmoke;
+}
+.sec4div2 p {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  margin-top: 3%;
+  line-height: 28px;
+}
+.sec4div2tab1 input {
+  width: 80%;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin-top: 15%;
+  cursor: text;
+  outline: blue;
+  color: whitesmoke;
+}
+.sec4div2tab1 label {
+  color: whitesmoke;
+  position: relative;
+  top: 40px;
+}
+.sec4div2tab1 button {
+  padding: 10px 20px;
+  margin-top: 5%;
+  cursor: pointer;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+.sec4div2tab1 button:hover {
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  transition: 0.7s;
+}
+footer {
+  background-color: #151515;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 17%;
+  padding: 30px;
+}
+.footerdiv1 {
+  margin-right: 15%;
+  margin-top: 7%;
+  text-align: center;
+}
+footer img {
+  width: 70%;
+}
+.footerdiv1 p {
+  color: whitesmoke;
+  font-size: 1rem;
+}
+.footerdiv2 {
+  margin-top: 8%;
+}
+.footerdiv2 h1 {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+.footerdiv2 ul {
+  color: #333;
+}
+.footerdiv2 ul li {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 2%;
+  color: #333;
+}
+.footerdiv2 ul li:hover {
+  color: orange;
+  transition: 0.7s;
+}
+.footerdiv2 ul li:active {
+  color: orange;
+}
+.sec5div1 {
+  text-align: center;
+  background-color: #151515;
+  margin-top: 7%;
+  padding: 40px;
+}
+.sec5div1 h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.sec5div2 {
+  margin-top: 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 7%;
+}
+.sec5div2tab1 {
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 30px;
+}
+.sec5div2tab1 img {
+  width: 100%;
+  height: 40vh;
+  object-fit: contain;
+}
+.sec5div2tab1 p {
+  color: whitesmoke;
+  line-height: 26px;
+  text-align: center;
+}
+.sec6div1 {
+  text-align: center;
+  margin-top: 10%;
+}
+.sec6div1 h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.sec6div1 span {
+  color: orange;
+}
+.sec6div2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 7%;
+}
+.sec6div2tab1 {
+  color: whitesmoke;
+  line-height: 26px;
+  margin-left: 5%;
+  font-size: 1.3rem;
+}
+.sec6div2tab2 img {
+  width: 400px;
+  margin-top: -3%;
+}
+.sec7div1 {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+.sec7div1tab1 {
+  margin-top: 7%;
+}
+.sec7div1tab1 h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-left: 15%;
+}
+.sec7div1tab1 h1 span {
+  color: orange;
+}
+.sec7div1tab1 p {
+  color: whitesmoke;
+  font-weight: 100;
+  line-height: 26px;
+  margin-left: 15%;
+  font-size: 1.2rem;
+}
+.sec7div1tab2 img {
+  width: 450px;
+}
+.sec7div1tab1 button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  background-color: orange;
+  cursor: pointer;
+  margin-top: 3%;
+  margin-left: 15%;
+}
+.sec7div1tab1 a {
+  color: #000000;
+  font-size: 1.3rem;
+}
+.sec8div1 {
+  margin-top: 10%;
+}
+.sec8div1 h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.sec8div2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 7%;
+}
+.sec8div2 img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 5%;
+}
+.sec8div2 p {
+  color: whitesmoke;
+  margin-left: 2%;
+  margin-top: 7%;
+  line-height: 40px;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.sec8div3 {
+  text-align: center;
+  margin-top: 15%;
+}
+.sec8div3 h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.sec8div4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 7%;
+}
+.sec8div4tab1 {
+  color: whitesmoke;
+  line-height: 26px;
+  font-size: 1.3rem;
+  margin-left: -7%;
+  margin-top: 5%;
+  line-height: 30px;
+}
+.sec8div4tab2 img {
+  width: 400px;
+  margin-top: -2%;
+  margin-left: 5%;
+}
+.sec9 h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 6%;
+  font-weight: 100;
+  font-size: 2.3rem;
+}
+.sec9div1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  margin-top: 9%;
+  margin-left: 10%;
+}
+.sec10div1 {
+  background-color: #151515;
+  text-align: center;
+  padding: 65px;
+  width: 70%;
+  position: relative;
+  top: -70px;
+  left: 50%;
+  translate: -50% 50%;
+  border-radius: 20px;
+}
+.sec10div1 h1 {
+  color: whitesmoke;
+  font-size: 2.2rem;
+  margin-top: 3%;
+}
+.sec10div1 span {
+  color: orange;
+}
+.sec10div1 p {
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+.sec10div1 button {
+  padding: 10px 20px;
+  background-color: orange;
+  border: 1px solid orange;
+  cursor: pointer;
+}
+.sec10div1 button:hover {
+  background-color: yellow;
+  border: 1px solid yellow;
+  transition: 0.7s ease-in-out;
+  border-radius: 20px;
+}
+.sec10div1 a {
+  color: #000000;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.sec10div3 {
+  margin-top: 29%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: 7%;
+}
+.sec10div3 h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: whitesmoke;
+}
+.sec10div3 p {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  margin-top: 3%;
+  line-height: 28px;
+}
+.sec10div3tab1 input {
+  width: 80%;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin-top: 15%;
+  cursor: text;
+  outline: blue;
+  color: whitesmoke;
+}
+.sec10div3tab1 label {
+  color: whitesmoke;
+  position: relative;
+  top: 40px;
+}
+.sec10div3tab1 button {
+  padding: 10px 20px;
+  margin-top: 5%;
+  cursor: pointer;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+.sec10div3tab1 button:hover {
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  transition: 0.7s;
+}
+.portfolio {
+  text-align: center;
+  margin-top: 7%;
+}
+.portfolio h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.portfolio p {
+  color: whitesmoke;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 5%;
+}
+.portfolio div {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin: 5%;
+}
+.portfolio img {
+  width: 40%;
+  height: 40vh;
+  object-fit: cover;
+}
+.sec11div1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 7%;
+}
+.sec11div1tab1 {
+  margin-top: 5%;
+  margin-left: -5%;
+}
+.sec11div1tab1 h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.sec11div1tab1 span {
+  color: orange;
+}
+.sec11div1tab1 p {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  margin-top: 10%;
+  line-height: 36px;
+}
+.sec11div1tab2 img {
+  width: 400px;
+  margin-left: 5%;
+}
+.sec12div1 {
+  background-color: orange;
+  text-align: center;
+  padding: 30px;
+  margin-top: 10%;
+}
+.sec12div1 p {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  font-weight: bold;
+}
+.sec13 h1 {
+  font-size: 2.5rem;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 8%;
+}
+.sec13div1 {
+  color: whitesmoke;
+}
+.sec13div1 p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-left: 7%;
+}
+.sec13div1 input {
+  background-color: #151515;
+  border: 1px solid #151515;
+  padding: 10px;
+  width: 30%;
+  margin-left: 7%;
+  color: whitesmoke;
+}
+.sec13div1 textarea {
+  background-color: #151515;
+  border: 1px solid #151515;
+  width: 70%;
+  margin-left: 7%;
+  padding: 20px;
+  color: whitesmoke;
+}
+.sec13div1 button {
+  padding: 15px 30px;
+  margin-top: 3%;
+  margin-left: 7%;
+  background-color: orange;
+  border: 1px solid orange;
+  cursor: pointer;
+}
+.sec13div1 button:hover {
+  background-color: yellow;
+  border: 1px solid yellow;
+  border-radius: 20px;
+  transition: 0.7s;
+}
